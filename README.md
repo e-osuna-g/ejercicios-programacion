@@ -18,6 +18,6 @@ deno test ./**/**.js
 deno test Ifs/if-1.js
 # o
 deno test Ifs/pares.js
+# o
+deno test Ifs/division.js
 ```
-
-> Nota: No se requieren permisos especiales para ejecutar estas pruebas.
