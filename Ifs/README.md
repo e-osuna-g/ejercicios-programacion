@@ -182,5 +182,6 @@ de esta forma la intencion es clara, y se lee de forma mas facil.
 Si te quedo alguna duda o quisieras que agregara alguna explicación
 [abre un issue en el repositorio](https://github.com/e-osuna-g/ejercicios-programacion/issues).
 
-Credit:
-[MDN if statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+Referencias:
+
+- [MDN if statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
