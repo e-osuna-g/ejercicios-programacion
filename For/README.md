@@ -36,6 +36,8 @@ Yo aconsejo siempre seguir el patron comun del for con las tres expresiones en e
 
 Es probablemente uno de los for menos usados, en uso comun, pero es muy importante dominarlo para entender correctamente los otros for, y saber cuando usar este o el `for..of` o `for...in`.
 
+Si ya leiste la [sentencia while](/while/README.md), te daras cuenta que For es una forma de `while` mas consisa, y leible , un patron comun que es una iteración con un contador, normalmente a esto le llamamos [Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar), Syntactic sugar, es una forma de hacer un patron o codigo mas facil de escribir o entender, veremos mas ejemplos en otros lugares, pero los `for...of` y `for...if` son en esencia Sysntatic Sugar de este `for`
+
 En lecciones avanzadas veremos los usos mas comunes para este `for`
 
 ### Ejemplos
