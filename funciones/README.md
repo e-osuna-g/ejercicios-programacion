@@ -59,7 +59,7 @@ Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 }
 ```
 
-- Como `let` funciones declaradas al nivel mas alto de un modulo o en bloques en modo estricto no pueden ser redeclaradas por ninguna otra declaracion
+- Como `let` funciones declaradas al nivel mas alto de un **modulo** o en **bloques en modo estricto** no pueden ser redeclaradas por ninguna otra declaracion
 
 ```javascript
 function x() {}
