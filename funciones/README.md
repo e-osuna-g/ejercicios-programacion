@@ -59,7 +59,7 @@ Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 }
 ```
 
-- Como `let` funciones declaradas al nivel mas alto de un **modulo** o en **bloques en modo estricto** no pueden ser re declaradas por ninguna otra declaración
+- Como `let` funciones declaradas al nivel mas alto de un **módulo** o en **bloques en modo estricto** no pueden ser re declaradas por ninguna otra declaración
 
 ```javascript
 function x() {}
@@ -91,13 +91,13 @@ block
 top*/
 ```
 
-- Como `var`, declaraciones de funciones en un `script` se añaden como propiedades del global this, y pueden ser re declaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en modulos las funciones no se agregan al `globalThis`
+- Como `var`, declaraciones de funciones en un `script` se añaden como propiedades del objecto global(`globalThis`, `window`), y pueden ser re declaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en módulos las funciones no se agregan al `globalThis`
 
 ![funcion siendo creada y añadida al globalThis en deno](image.png)
 
 ![funcion siendo creada y añadida al globalThis en firefox](image-1.png)
 
-Si ejecuto este codigo como modulo el resultado del console.log sera undefined, apesar de que el `REPL` si devuelve la función
+Si ejecuto este codigo como módulo el resultado del `console.log` será undefined, apesar de que el `REPL` si devuelve la función
 
 ```javascript
 function x() {}
