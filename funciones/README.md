@@ -25,7 +25,7 @@ function nombre(parametro_1, parametro_2, parametro_3) {}
 
 ### sentencias
 
-Las sentencias que comprenden el cuerpo de la funcion, aqui se usa la sentencia `return` para devolver información de una función.
+Las sentencias comprenden el cuerpo de la funcion, en el siguiente ejemplo se usa la sentencia `return` para devolver información de una función.
 
 ```javascript
 function nombre() {
@@ -33,7 +33,7 @@ function nombre() {
 }
 ```
 
-En este ejemplo la funcion nombre siempre regresa la cadena `"Hola"` como resultado de llamar a la funcion de la siguiente manera `nombre()`
+En el ejemplo anterior la función `nombre` siempre regresa la cadena `"Hola"` como resultado de llamar a la función de la siguiente manera `nombre()`
 
 ### Notas
 
