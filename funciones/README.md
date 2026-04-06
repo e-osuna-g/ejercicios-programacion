@@ -39,9 +39,9 @@ En el ejemplo anterior la función `nombre` siempre regresa la cadena `"Hola"` c
 
 Cada vez que llames una función devolverá su primer `return` ejecutado, si llega al final de la funcion sin encontrar un `return` devuelve `undefined`
 
-Las declaraciones de funciones se comportan como un mix de `var` y `let`:
+Las declaraciones de funciones tienen algunos compartamientos, notaremos algunos en los siguientes puntos:
 
-- Como `let` en modo estricto, las declaraciones de funciones están acotadas al bloque que las contiene mas cercano
+- Las declaraciones de funciones están acotadas al bloque que las contiene mas cercano
 
 ```javascript
 {
@@ -59,7 +59,7 @@ Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 }
 ```
 
-- Como `let` funciones declaradas al nivel mas alto de un **módulo** o en **bloques en modo estricto** no pueden ser re declaradas por ninguna otra declaración
+- Las funciones declaradas al nivel mas alto de un **módulo** o en **bloques en modo estricto** no pueden ser re declaradas por ninguna otra declaración
 
 ```javascript
 function x() {}
@@ -91,24 +91,40 @@ block
 top*/
 ```
 
-- Como `var`, declaraciones de funciones en un `script` se añaden como propiedades del objecto global(`globalThis`, `window`), y pueden ser re declaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en módulos las funciones no se agregan al `globalThis`
+- Las declaraciones de funciones en un `script` se añaden como propiedades del objecto global(`globalThis`, `window`), y pueden ser re declaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en módulos las funciones no se agregan al `globalThis`
 
 ![funcion siendo creada y añadida al globalThis en deno](image.png)
 
 ![funcion siendo creada y añadida al globalThis en firefox](image-1.png)
 
-Si ejecuto este codigo como módulo el resultado del `console.log` será undefined, apesar de que el `REPL` si devuelve la función
+Si ejecuto este codigo como módulo el resultado del `console.log` será undefined, apesar de que el `REPL` si devuelve la función.
 
 ```javascript
 function x() {}
 console.log(globalThis.x);
 ```
 
-- Como ambas se puede re-asignar, pero deberias evitar hacerlo
-- Como ninguna de las dos, las funciones son `hoisted`(izadas) juntas con su valor y pueden ser llamadas en cualquier lugar que esten en el scope que las contiene, veremos mas adelante que es el `hoisting`
+- Las funciones las puedes re asignar, pero deberias evitar hacerlo.
+- Las funciones son `hoisted`(izadas) esto provoca que pueden ser llamadas en cualquier lugar que esten en el scope que las contiene, el siguiente ejemplo mostrara como funciona el hoisting:
+
+```javascript
+x();
+function x() {
+  console.log("LLamada");
+}
+```
+
+sera equivalente a
+
+```javascript
+function x() {
+  console.log("LLamada");
+}
+x();
+```
 
 Nota de pie:
-Esta leccion solo enseña como se crean las funciones mas basicas y algunas curiosidades, de las funciones, mas adelante veremos como usarlas, y diferentes tipos de declaraciones de funciones como los generadores(generators) `function*`, las `async function` y `async function*`, las funciones flechas `arrow function` y definicion de metodos.
+Esta lección solo enseña como se crean las funciones mas basicas y algunas curiosidades, de las funciones, mas adelante veremos como usarlas, y diferentes tipos de declaraciones de funciones como los generadores(generators) `function*`, las `async function` y `async function*`, las funciones flechas `arrow function` y definicion de metodos.
 
 Referencias:
 
