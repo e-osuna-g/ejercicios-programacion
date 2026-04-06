@@ -1,6 +1,6 @@
 # Funciones
 
-La declaración de una funcion crea un vinculo entre una nueva funcion y un nombre.
+La declaración de una función crea un vinculo entre una nueva función y un nombre.
 
 La declaración es la siguiente
 
@@ -13,11 +13,11 @@ nombre("Parametro_1");
 
 ### nombre
 
-Esta parte es el nombre de la funcion que se vinculara para ser usada, es usado de la forma `nombre()`
+Esta parte es el nombre de la función que se vinculara para ser usada, es usado de la forma `nombre()`
 
 ### parametros
 
-Los parametros son usados para darle una entrada de datos a la función, cada uno debe ser nombrado y hay un limite de 255 argumentos para cada funcion
+Los parametros son usados para darle una entrada de datos a la función, cada uno debe ser nombrado y hay un limite de 255 argumentos para cada función
 
 ```javascript
 function nombre(parametro_1, parametro_2, parametro_3) {}
@@ -25,7 +25,7 @@ function nombre(parametro_1, parametro_2, parametro_3) {}
 
 ### sentencias
 
-Las sentencias comprenden el cuerpo de la funcion, en el siguiente ejemplo se usa la sentencia `return` para devolver información de una función.
+Las sentencias comprenden el cuerpo de la función, en el siguiente ejemplo se usa la sentencia `return` para devolver información de una función.
 
 ```javascript
 function nombre() {
@@ -37,11 +37,11 @@ En el ejemplo anterior la función `nombre` siempre regresa la cadena `"Hola"` c
 
 ### Notas
 
-Cada vez que llames una función devolvera su primer `return` ejecutado, si llega al final de la funcion sin encontrar un `return` devuelve `undefined`
+Cada vez que llames una función devolverá su primer `return` ejecutado, si llega al final de la funcion sin encontrar un `return` devuelve `undefined`
 
 Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 
-- Como `let` en modo estricto, las declaraciones de funciones estan acotadas al bloque que las contiene mas cercano
+- Como `let` en modo estricto, las declaraciones de funciones están acotadas al bloque que las contiene mas cercano
 
 ```javascript
 {
@@ -59,7 +59,7 @@ Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 }
 ```
 
-- Como `let` funciones declaradas al nivel mas alto de un **modulo** o en **bloques en modo estricto** no pueden ser redeclaradas por ninguna otra declaracion
+- Como `let` funciones declaradas al nivel mas alto de un **modulo** o en **bloques en modo estricto** no pueden ser re declaradas por ninguna otra declaración
 
 ```javascript
 function x() {}
@@ -89,7 +89,7 @@ block
 top*/
 ```
 
-- Como `var`, declaraciónes de funciones en un `script` se añaden como propiedades del global this, y pueden ser redeclaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en modulos las funciones no se agregan al `globalThis`
+- Como `var`, declaraciones de funciones en un `script` se añaden como propiedades del global this, y pueden ser re declaradas. en las siguientes dos imagenes se muestra como se añaden al `globalThis`, esto solo pasa en el `REPL` o tambien llamada `Interactive Top-Level`, para entornos como `Deno` o scripts en las paginas `Html`, en modulos las funciones no se agregan al `globalThis`
 
 ![funcion siendo creada y añadida al globalThis en deno](image.png)
 
