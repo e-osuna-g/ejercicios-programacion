@@ -99,3 +99,6 @@ export function formatPhone(phoneStr) {
 ```
 
 cada comentario con nombre, es un archivo diferente, en este caso, podemos ver como una sola función puede ser usada en todo tu proyecto, de esta manera si necesitamos agregar un nuevo formato o actualizar el que ya tenemos, podemos actualizar un solo punto del proyecto y se actualizaran todos los usos.
+
+Este es el momento idóneo para empezar un ejercicio pequeño abre el archivo [funciones1.js](/funciones/funciones1.js), para ejecutarlo puedes ejecutar en tu consola
+`deno test funciones/funciones1.js`, este archivo cuenta con 2 ejercicios, intenta hacerlos todos.
