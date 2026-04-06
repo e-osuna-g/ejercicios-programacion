@@ -126,6 +126,8 @@ x();
 Nota de pie:
 Esta lección solo enseña como se crean las funciones mas basicas y algunas curiosidades, de las funciones, mas adelante veremos como usarlas, y diferentes tipos de declaraciones de funciones como los generadores(generators) `function*`, las `async function` y `async function*`, las funciones flechas `arrow function` y definicion de metodos.
 
+[Siguiente](/funciones/uso.md)
+
 Referencias:
 
 - [MDN function statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
