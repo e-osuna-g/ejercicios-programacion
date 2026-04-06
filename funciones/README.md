@@ -37,7 +37,7 @@ En el ejemplo anterior la función `nombre` siempre regresa la cadena `"Hola"` c
 
 ### Notas
 
-Cada vez que llames una función devolvera su primer `return` ejecutado, si llegal final de la funcion sin encontrar un `return` devuelve `undefined`
+Cada vez que llames una función devolvera su primer `return` ejecutado, si llega al final de la funcion sin encontrar un `return` devuelve `undefined`
 
 Las declaraciones de funciones se comportan como un mix de `var` y `let`:
 
