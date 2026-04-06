@@ -76,11 +76,13 @@ function x() {
 }
 x();
 {
+  // comienza el bloque_1
   function x() {
+    //esta función tomara el nombre x dentro de bloque_1
     console.log("block");
   }
   x();
-}
+} // se termina el bloque_1
 x();
 //Genera los logs
 /*
