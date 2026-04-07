@@ -112,3 +112,33 @@ const { c = 2 } = { c: null }; // c is null
 ```
 
 #### Usos comunes de la de-estructuración
+
+Un uso común de la de-estructuración es usarlo en valores que una función regresa, por ejemplo la función `useState` de `react`:
+
+```javascript
+const [state, setState] = useState();
+```
+
+Esta función regresa un arreglo con 2 valores, el índice 0, es una variable y el índice 1, es una función, la de-estructuración, hace que sea mas sencillo usar este tipo de funciones.
+
+Otro uso común, es en los argumentos de funciones:
+
+```javascript
+function config({theme = "light", color = '#0F7AAF'}) {
+ ...
+}
+config({theme:'dark'})
+```
+
+En el ejemplo anterior, la función config toma un objeto como primer argumento, este tiene 2 atributos con valores por defecto que podrán ser usados dentro de la función. En este caso al llamar la función `config`, los valores del argumento serán `theme='dark'` y `color='#0F7AAF'`, es muy practico usar este tipo de argumentos cuando el numero de argumentos empieza a crecer, a la hora de llamar a las funciones es mas sencillo ver que se esta mandando.
+
+Otro caso para de-estructuración viene de los ciclos `for`, dare un ejemplo sencillo
+
+```javascript
+const array = [{user: "user1", email: "...", age: 55},...]
+for(const { user } of array) {
+console.log("user:", user)
+}
+```
+
+En el ejemplo anterior, solo user es necesario, por lo tanto de-estructuramos el array, y obtenemos solo la información necesaria
